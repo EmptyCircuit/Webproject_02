@@ -1,9 +1,10 @@
-@font-face{
-    font-family: Gilroy;
-src: url(Gilroy-Black.woff);}
-@font-face{
-    font-family: Gilroy-Medium;
-    src: url(Gilroy-Medium.woff);
+@font-face {
+  font-family: Gilroy;
+  src: url(Gilroy-Black.woff);
+}
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url(Gilroy-Medium.woff);
 }
 
 * {
@@ -23,95 +24,197 @@ body {
   width: 100%;
   /*background-color: whitesmoke;*/
 }
-#nav{
-    height: 80px;
-    width: 100%;
-    /*background-color: red;*/
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap:20px;
-    padding: 0 30px;
+#nav {
+  height: 80px;
+  width: 100%;
+  /*background-color: red;*/
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 0 30px;
 }
 
-#nav h4{
-    font-size: 15px;
-    font-weight: 600;
+#nav h4 {
+  font-size: 15px;
+  font-weight: 600;
 }
-#nav i{
-    background-color: black;
-    color: white;
-    font-size: 15px;
-    padding: 10px;
-    border-radius: 50px;
-    font-weight: 400;
+#nav i {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 50px;
+  font-weight: 400;
 }
-#center{
-    /*height: 40%;*/
-    width: 100%;
-    /*background-color: red;*/
-    padding: 40px 80px;
+#center {
+  /*height: 40%;*/
+  width: 100%;
+  /*background-color: red;*/
+  padding: 40px 80px;
 }
-#center h1{
-    font-size: 70px;
-    font-weight: 500;
-    line-height: 90px;
+#center h1 {
+  /*font-size: 70px;*/
+  font-size: 5.11vw;
+  font-weight: 500;
+  line-height: 6.6vw;
 }
-#center-in{
-    height: 200px;
-    /*background-color: red;*/
-    width: 100%;
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
+#center-in {
+  height: 200px;
+  /*background-color: red;*/
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
 }
-#center-in p{
-    font-size: 20px;  
-    font-weight: 600;  
-line-height: 32px;
-}
-
-#right{
-    width: 20%;
-}
-.elem{
-    /*background-color:yellow;*/
-    /*margin: 5px;*/
-    padding: 20px 0px; 
-    border-top: 2px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-.elem i{
-    font-size: 25px;
-    font-weight: 600px;
-    opacity: 0;
-}
-.elem:hover i{
-    opacity: 1;
-}
-.elem:hover{
-    background-color: #efeff1;
+#center-in p {
+  font-size: 1.46vw;
+  font-weight: 600;
+  line-height: 32px;
+  line-height: 2.33vw;
 }
 
-.elem:hover a{
-    text-decoration: underline;
+#right {
+  width: 20%;
+}
+.elem {
+  /*background-color:yellow;*/
+  /*margin: 5px;*/
+  padding: 20px 0px;
+  border-top: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.elem i {
+  font-size: 25px;
+  font-weight: 600px;
+  opacity: 0;
+}
+.elem:hover i {
+  opacity: 1;
+}
+.elem:hover {
+  background-color: #efeff1;
 }
 
-.elem a{
-    color: black;
-    text-decoration:none;
-    font-weight: 600;
-    font-size: 20px;
+.elem:hover a {
+  text-decoration: underline;
 }
 
-#bottom{
-    height: 40%;
-    width: 100%;
-    /*background-color: red;*/
-    background-image: url(women.webp);
-    background-size: cover;
-    background-position: 0 38%
+.elem a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#bottom {
+  height: 40%;
+  width: 100%;
+  /*background-color: red;*/
+  background-image: url(women.webp);
+  background-size: cover;
+  background-position: 0 38%;
+}
+
+@media (max-width: 600px) {
+
+#nav {
+  height: 55px;
+  width: 100%;
+  /*background-color: red;*/
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  padding: 0 20px;
+}
+
+#nav h4 {
+  font-size: 15px;
+  font-weight: 600;
+  /*display: none;*/
+}
+#nav i {
+  background-color: black;
+  color: white;
+  font-size: 13px;
+  padding: 10px;
+  border-radius: 50px;
+  font-weight: 400;
+}
+
+#center {
+  /*height: 40%;*/
+  width: 100%;
+  /*background-color: red;*/
+  padding: 20px 15px;
+}
+#center h1 {
+  /*font-size: 70px;*/
+  font-size: 11vw;
+  font-weight: 500;
+  line-height: 12.6vw;
+}
+#center-in {
+  height: 200px;
+  /*background-color: red;*/
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 22px;
+  gap:20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#center-in p {
+  font-size: 3.1vw;
+  font-weight: 500;
+  /*line-height: 32px;*/
+  line-height: 4.33vw;
+}
+
+#right {
+  width: 100%;
+}
+.elem {
+  /*background-color:yellow;*/
+  /*margin: 5px;*/
+  padding: 20px 0px;
+  border-top: 1.3px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.elem i {
+  font-size: 16px;
+  font-weight: 600px;
+  opacity: 1;
+}
+.elem:hover {
+  background-color: #efeff1;
+}
+
+.elem:hover a {
+  text-decoration: underline;
+}
+
+.elem a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#bottom {
+  height: 30%;
+  width: 100%;
+  /*background-color: red;*/
+  background-image: url(women.webp);
+  background-size: cover;
+  background-position: 0 38%;
+}
+
+
 }
